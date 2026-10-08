@@ -12,7 +12,7 @@ import { notFound, errorHandler } from "./middleware/error.js";
 const app = express();
 app.use(
   cors({
-    origin: process.env.CLIENT_URL ||"https://matricbuddyapp.netlify.app/" || "http://localhost:5173",
+    origin: process.env.CLIENT_URL ||"https://matricbuddyapp.netlify.app" || "http://localhost:5173",
     credentials: true,
   }),
 );
